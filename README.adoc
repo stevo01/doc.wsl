@@ -5,7 +5,7 @@
 Windows Subsystem for Linux (Wsl) is a feature that allows you to run linux in a virtual machine.
 You can manage the machine from PowerShell with the command "wsl".
 
-== helpfull commands in windows power shell
+== helpful commands in windows power shell
 
 update wsl
 [source,bash]
@@ -32,9 +32,9 @@ show status
 wsl --status
 ----
 
-== helpfull commands / configs in ubuntu
+== helpful commands / configs in ubuntu
 
-=== update sw packages
+=== update software packages
 [source,bash]
 ----
 apt update 
@@ -42,7 +42,7 @@ apt full-upgrade
 ----
 
 === enable systemd
-Create file /etc/wsl.conf and place following lines intoo that file.
+Create a file /etc/wsl.conf and place following lines into that file.
 
 [source,bash]
 ----
@@ -65,9 +65,8 @@ rm smartgit-linux-23_1_1.tar.gz
 
 === USB
 
-==== Installation in windows
-the following article shows how to allow wsl machine access to usb device
-- https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+==== Installation on windows
+see <<item1, Install Procedure>> for details
 
 ==== Install the USBIP tools and hardware database in Linux
 [source,bash]
@@ -96,7 +95,8 @@ usbipd detach  --busid 2-13 -w Ubuntu
 
 NOTE: you can check if usb device is available inside wsl2 machine by command "lsusb".
 
+[[bookmark]]
 == Bookmarks
-* wsl installation procedure wsl installation procedure https://learn.microsoft.com/en-us/windows/wsl/install
-* https://learn.microsoft.com/en-us/windows/wsl/connect-usb
+* [[item1]] wsl install procedure https://learn.microsoft.com/en-us/windows/wsl/install
+* [[item2]] connect usb https://learn.microsoft.com/en-us/windows/wsl/connect-usb
 
